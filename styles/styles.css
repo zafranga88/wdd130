@@ -1,3 +1,10 @@
+/* Class Selectors */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --primary-color: darkblue;
     --text-dark: #333;
@@ -8,6 +15,14 @@
     --aside-width: 20rem;
     --small-img-width: 150px;
     --large-img-width: 200px;
+}
+
+.box {
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    background-color: var(--background-light);
+    color: var(--text-dark);
 }
 
 nav {
@@ -29,8 +44,15 @@ main {
     max-width: var(--main-width);
 }
 
+main img {
+    width: var(--small-img-width);
+    height: auto;
+    float: right;
+}
+
 aside {
     width: var(--aside-width);
+    position: relative;
     margin: var(--standard-padding);
     border: 1px solid rgb(0 0 0 / 0.2);
     padding: var(--standard-padding);
@@ -39,13 +61,14 @@ aside {
     text-align: center;
 }
 
-aside img {
-    width: var(--large-img-width);
-    height: auto;
+aside h2 {
+    position: absolute;
+    top: -20px;
+    left: -20px;
 }
 
-main img {
-    width: var(--small-img-width);
+aside img {
+    width: var(--large-img-width);
     height: auto;
 }
 
