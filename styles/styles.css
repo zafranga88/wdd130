@@ -1,43 +1,57 @@
+:root {
+    --primary-color: darkblue;
+    --text-dark: #333;
+    --background-light: #eee;
+    --standard-padding: 1rem;
+    --nav-padding: 20px;
+    --main-width: 840px;
+    --aside-width: 20rem;
+    --small-img-width: 150px;
+    --large-img-width: 200px;
+}
+
 nav {
-    background-color: darkblue;
+    background-color: var(--primary-color);
     padding: 10px;
 }
 
 nav a {
-    color:white;
+    color: white;
     display: block;
-    padding: 20px;
+    padding: var(--nav-padding);
 }
 
 h1 {
-    color: darkblue;
+    color: var(--primary-color);
 }
 
 main {
-    max-width: 840px;
+    max-width: var(--main-width);
 }
 
 aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2); /* 1 */
-    padding: 1rem;
-    background-color: #eee;
-    color:#333;
+    width: var(--aside-width);
+    margin: var(--standard-padding);
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: var(--standard-padding);
+    background-color: var(--background-light);
+    color: var(--text-dark);
     text-align: center;
 }
 
-aside img { 
-    width: 200px;
+aside img {
+    width: var(--large-img-width);
     height: auto;
 }
 
 main img {
-    width: 150px;
+    width: var(--small-img-width);
     height: auto;
 }
 
-p {padding: 0;}
+p {
+    padding: 0;
+}
 
 footer {
     margin-top: 15px;
