@@ -63,8 +63,9 @@ aside {
 
 aside h2 {
     position: absolute;
-    top: -20px;
+    top: 15px;
     left: -20px;
+    right: -20px;
 }
 
 aside img {
