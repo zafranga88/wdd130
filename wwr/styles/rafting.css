@@ -1,0 +1,138 @@
+:root {
+    --primary-color: #CE8147;    
+    --secondary-color: #CFE6B5;   
+    --accent1-color: #ECDD7B;     
+    --accent2-color: #D2E9C4;     
+    --paragraph-color: #333333;
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    font-family: 'Inconsolata', monospace;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+header img {
+    width: 200px;
+    height: auto;
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 600;
+    padding: 10px 20px;
+}
+
+h1, h2 {
+    font-family: 'Exo 2', sans-serif;
+    color: var(--primary-color);
+}
+
+p {
+    font-family: 'Inconsolata', monospace;
+    color: var(--paragraph-color);
+    line-height: 1.5;
+}
+
+.hero {
+    position: relative;
+    margin-bottom: 2em;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 30px;
+    left: 5%;
+    right: 5%;
+    background-color: rgba(206, 129, 71, 0.8);
+    padding: 20px;
+}
+
+.hero article img {
+    float: right;
+    width: 200px;
+    margin-left: 20px;
+}
+
+.hero article p {
+    color: white;
+    margin: 0;
+}
+
+section {
+    margin: 40px 0;
+    padding: 20px;
+}
+
+section:last-of-type {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+section:last-of-type h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+section:last-of-type img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+.sociallinks {
+    display: flex;
+    gap: 20px;
+}
+
+.sociallinks a {
+    text-decoration: none;
+}
+
+.sociallinks img {
+    width: 30px;
+    height: 30px;
+}
