@@ -79,6 +79,12 @@ p {
     padding: 20px;
 }
 
+.hero article h2 {
+    color: white;
+    margin: 0 0 10px 0;
+    font-size: 1.5em;
+}
+
 .hero article img {
     float: right;
     width: 200px;
